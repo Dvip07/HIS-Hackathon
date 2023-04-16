@@ -1,0 +1,138 @@
+<form class="forms-sample" method="post" action="../backend/DB_insert.php" enctype="multipart/form-data">
+  <div class="row">
+
+      <div class="col-6">
+          <div class="form-group">
+              <label for="major_cat">Major Category</label>
+              <select class="form-control" id="major_cat" name="major_cat" onchange="handleDropdownChange()">
+                  <option default selected disabled>---- SELECT Major Category ----</option>
+                  <option value="Bridge_Course">Bridge Course</option>
+                  <option value="Technical_/_Research_Skill">Technical / Research Skill</option>
+                  <option value="Sports_and_Cultural">Sports and Cultural</option>
+                  <option value="Community_outreach_and_social_initiatives">Community outreach and social initiatives</option>
+                  <option value="Innovation_/_IPR/_Entrepreneur_ship">Innovation / IPR/ Entrepreneur ship</option>
+                  <option value="Leadership_/_Management">Leadership / Management (For the contribution of 1 Academic Year)</option>
+              </select>
+          </div>
+      </div>
+
+      <div class="col-6">
+          <div class="form-group other box">
+              <label for="acitivity">Activity</label>
+              <div id="acitivity_default">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                  </select>
+              </div>
+
+              <div id="Bridge" style="display:none;">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                      <option value="option1">Village Visit</option>
+                      <option value="option2">Learning Engineering</option>
+                      <option value="option3">History of Science & Technology</option>
+                      <option value="option3">Life Skills</option>
+                  </select>
+              </div>
+
+              <div id="Technical" style="display:none;">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                      <option value="option3">Group Discussion</option>
+                      <option value="option3">Technical Quiz</option>
+                      <option value="option3">Aptitude / Reasoning</option>
+                      <option value="option3">Tech-Fest</option>
+                      <option value="option3">Workshop</option>
+                      <option value="option3">STTP</option>
+                      <option value="option3">MOOC with Final Assessment</option>
+                      <option value="option1">Paper Presentation</option>
+                      <option value="option2">Poster</option>
+                      <option value="option3">Training / Internship / Professional Certification</option>
+                      <option value="option3">Project (Non Curricular)</option>
+                      <option value="option3">Industrial/Exhibition Visit with report</option>
+                      <option value="option3">Consultancy Proiects</option>
+                      
+                  </select>
+              </div>
+              <div id="Cultural" style="display:none;">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                      <option value="option1">Cultural</option>
+                      <option value="option2">Sports</option>
+                  </select>
+              </div>
+              <div id="Community" style="display:none;">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                      <option value="option1">Community Service Allied Activities (Two Dav)</option>
+                      <option value="option2">Community Service & Allied Activities (Up to One Week)</option>
+                      <option value="option3">Community Service & Allied Activities (One Month)</option>
+                      <option value="option3">Community Service & Allied Activities (One Semester)</option>
+                      <option value="option1">Community Service & Allied Activities (One Academic Year)</option>
+                      <option value="option2">NSS/NCC (On the successful completion of one year program)</option>
+                  </select>
+              </div>
+              <div id="Innovation" style="display:none;">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                      <option value="option1">High Customer Review for Creative Products</option>
+                      <option value="option2">Awards/Recognitions for Products (State, National, or International Level)</option>
+                      <option value="option1">Legally Registered a Start-up Company</option>
+                      <option value="option2">Filed a Patent</option>
+                      <option value="option1">Published Patent</option>
+                      <option value="option2">Completed Prototype Development</option>
+                      <option value="option1">Generated Significant Revenue/Profits</option>
+                      <option value="option2">Patent Approved</option>
+                      <option value="option1">Attracted External Funding (Investor)</option>
+                      <option value="option2">Other Major Industry Specific Achievements</option>
+                      <option value="option1">User / Industry Implementing the Innovation developed by Student</option>
+                      <option value="option2">Significant Value Addition / Augmentation of Grass roots / Social Innovation</option>
+                  </select>
+              </div>
+              <div id="Leadership" style="display:none;">
+                  <select class="form-control" id="acitivity" name="acitivity" required>
+                      <option default selected disabled>---- SELECT Activity ----</option>
+                      <option value="option1">Hobby Club Activities / E-Cell / Placement Cell / Media Club, etc</option>
+                      <option value="option2">Festival (Technical / Business / Others) Events</option>
+                      <option value="option2">Professional Societies (E.g. ASME / ACM / IEEE / SAE, etc.)</option>
+                      <option value="option2">Special Initiatives</option>
+                      <option value="option2">GTU Innovation Club / S4 Extension Centre</option>
+                      <option value="option2">GIC Associates</option>
+                  </select>
+              </div>
+
+          </div>
+      </div>
+
+      <div class="col-6">
+          <div class="form-group">
+              <label for="Level">Level</label>
+              <select class="form-control" id="Level" name="Level" required>
+                  <option default selected disabled>---- level ----</option>
+                  <option value="option1">College Level</option>
+                  <option value="option2">Zonal Level</option>
+                  <option value="option3">Inter-College/University(State Level)</option>
+                  <option value="option3">Inter-College/University(National Level)</option>
+                  <option value="option3">International Level</option>
+              </select>
+          </div>
+      </div>
+      
+
+      <div class="col-6">
+          <div class="form-group other box">
+              <label for="notice_desc">Notice Description</label>
+              <textarea class="form-control" id="notice_desc" rows="4" name="notice_desc"></textarea>
+          </div>
+      </div>
+
+     
+
+  </div>
+
+
+  <!-- Submit Button-->
+  <button type="submit" class="btn btn-primary mr-2" name="add_notice">Submit</button>
+  <button type="reset" class="btn btn-light">Reset</button>
+
+</form>
